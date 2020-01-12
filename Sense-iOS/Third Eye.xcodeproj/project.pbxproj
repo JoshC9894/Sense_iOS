@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240F6684645DA4D38B8C1F42 /* Pods_Third_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B699940BC60823BB8F732108 /* Pods_Third_Eye.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		550515092091253200C7E50E /* DetectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550515082091253200C7E50E /* DetectVC.swift */; };
+		5505196D208165C000FD7130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505196C208165C000FD7130 /* AppDelegate.swift */; };
+		55051972208165C000FD7130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55051970208165C000FD7130 /* Main.storyboard */; };
+		55051974208165C000FD7130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55051973208165C000FD7130 /* Assets.xcassets */; };
+		55051977208165C000FD7130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55051975208165C000FD7130 /* LaunchScreen.storyboard */; };
+		5505197F208166D700FD7130 /* CaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505197E208166D700FD7130 /* CaptureVC.swift */; };
+		550519812081685B00FD7130 /* ReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550519802081685B00FD7130 /* ReadVC.swift */; };
+		5505198320816CD600FD7130 /* LetterClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5505198220816CD600FD7130 /* LetterClassification.swift */; };
+		550519872081753000FD7130 /* FrameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550519862081753000FD7130 /* FrameHelper.swift */; };
+		5518A2A920ACD9EB00C708B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5518A2A820ACD9EB00C708B4 /* AVFoundation.framework */; };
+		5518A2AB20ACDC4400C708B4 /* CompareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518A2AA20ACDC4400C708B4 /* CompareVC.swift */; };
+		55205C02208E4C4900426D29 /* Azure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55205C01208E4C4900426D29 /* Azure.swift */; };
+		5528AAFB208F94640009DCE0 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5528AAFA208F94640009DCE0 /* InitialVC.swift */; };
+		5528AAFF208FA4FC0009DCE0 /* ListenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5528AAFE208FA4FC0009DCE0 /* ListenVC.swift */; };
+		5528AB01208FAF520009DCE0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5528AB00208FAF520009DCE0 /* UIViewController.swift */; };
+		5528AB0D208FBF0C0009DCE0 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 5528AB0C208FBF0C0009DCE0 /* hello.json */; };
+		5545C2E4208E904300666218 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545C2E3208E904300666218 /* AWS.swift */; };
+		5545C2E6208E919E00666218 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5545C2E5208E919E00666218 /* awsconfiguration.json */; };
+		555AB050208922E400DBF317 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 555AB04F208922E400DBF317 /* tessdata */; };
+		5565EAF5208E56AB007739AE /* loader_black.json in Resources */ = {isa = PBXBuildFile; fileRef = 5565EAF4208E56AB007739AE /* loader_black.json */; };
+		557216D4208D1FB100B80791 /* Tesseract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557216D3208D1FB100B80791 /* Tesseract.swift */; };
+		557216F4208D3B0D00B80791 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557216F3208D3B0D00B80791 /* Vision.swift */; };
+		557216F6208D3B5B00B80791 /* Alphanum_28x28.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 557216F5208D3B5B00B80791 /* Alphanum_28x28.mlmodel */; };
+		55B836A9208D1DA9001C5232 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55B836A8208D1DA8001C5232 /* GoogleService-Info.plist */; };
+		55C898192089474600D5BF0B /* Tensorflow.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55C898182089474600D5BF0B /* Tensorflow.mlmodel */; };
+		55DE1061208804FC00C6B6BC /* Turi_Create.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55DE105F208804FC00C6B6BC /* Turi_Create.mlmodel */; };
+		55DE1062208804FC00C6B6BC /* AzureModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55DE1060208804FC00C6B6BC /* AzureModel.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		550515082091253200C7E50E /* DetectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectVC.swift; sourceTree = "<group>"; };
+		55051969208165C000FD7130 /* Third Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Third Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5505196C208165C000FD7130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55051971208165C000FD7130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55051973208165C000FD7130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55051976208165C000FD7130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55051978208165C000FD7130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5505197E208166D700FD7130 /* CaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVC.swift; sourceTree = "<group>"; };
+		550519802081685B00FD7130 /* ReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadVC.swift; sourceTree = "<group>"; };
+		5505198220816CD600FD7130 /* LetterClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterClassification.swift; sourceTree = "<group>"; };
+		550519862081753000FD7130 /* FrameHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHelper.swift; sourceTree = "<group>"; };
+		5518A2A820ACD9EB00C708B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5518A2AA20ACDC4400C708B4 /* CompareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareVC.swift; sourceTree = "<group>"; };
+		55205C01208E4C4900426D29 /* Azure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azure.swift; sourceTree = "<group>"; };
+		5528AAFA208F94640009DCE0 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		5528AAFE208FA4FC0009DCE0 /* ListenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenVC.swift; sourceTree = "<group>"; };
+		5528AB00208FAF520009DCE0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5528AB0C208FBF0C0009DCE0 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
+		5545C2E3208E904300666218 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
+		5545C2E5208E919E00666218 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		555AB04F208922E400DBF317 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		5565EAF4208E56AB007739AE /* loader_black.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader_black.json; sourceTree = "<group>"; };
+		557216D3208D1FB100B80791 /* Tesseract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tesseract.swift; sourceTree = "<group>"; };
+		557216F3208D3B0D00B80791 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		557216F5208D3B5B00B80791 /* Alphanum_28x28.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Alphanum_28x28.mlmodel; sourceTree = "<group>"; };
+		55B836A8208D1DA8001C5232 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55C898182089474600D5BF0B /* Tensorflow.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Tensorflow.mlmodel; sourceTree = "<group>"; };
+		55DE105F208804FC00C6B6BC /* Turi_Create.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Turi_Create.mlmodel; sourceTree = "<group>"; };
+		55DE1060208804FC00C6B6BC /* AzureModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AzureModel.mlmodel; sourceTree = "<group>"; };
+		B699940BC60823BB8F732108 /* Pods_Third_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Third_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3576F4982A573A36EDAB8AB /* Pods-Third Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Third Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye.release.xcconfig"; sourceTree = "<group>"; };
+		FE45157FA766629BADBAECC1 /* Pods-Third Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Third Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55051966208165C000FD7130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5518A2A920ACD9EB00C708B4 /* AVFoundation.framework in Frameworks */,
+				240F6684645DA4D38B8C1F42 /* Pods_Third_Eye.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5505150A2091255300C7E50E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5528AB00208FAF520009DCE0 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		55051960208165C000FD7130 = {
+			isa = PBXGroup;
+			children = (
+				5505196B208165C000FD7130 /* Third Eye */,
+				5505196A208165C000FD7130 /* Products */,
+				7F4DB1856F569398E74C5F49 /* Pods */,
+				FBFE4DDF61001AD674ED20A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5505196A208165C000FD7130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55051969208165C000FD7130 /* Third Eye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5505196B208165C000FD7130 /* Third Eye */ = {
+			isa = PBXGroup;
+			children = (
+				55051970208165C000FD7130 /* Main.storyboard */,
+				55051975208165C000FD7130 /* LaunchScreen.storyboard */,
+				5505196C208165C000FD7130 /* AppDelegate.swift */,
+				5528AAFA208F94640009DCE0 /* InitialVC.swift */,
+				5505197E208166D700FD7130 /* CaptureVC.swift */,
+				550519802081685B00FD7130 /* ReadVC.swift */,
+				5518A2AA20ACDC4400C708B4 /* CompareVC.swift */,
+				550515082091253200C7E50E /* DetectVC.swift */,
+				5528AAFE208FA4FC0009DCE0 /* ListenVC.swift */,
+				5505198220816CD600FD7130 /* LetterClassification.swift */,
+				550519862081753000FD7130 /* FrameHelper.swift */,
+				557216D2208D1F9A00B80791 /* OCR Methods */,
+				554358DE208BC2F300016902 /* MLModels */,
+				5505150A2091255300C7E50E /* Extensions */,
+				55051973208165C000FD7130 /* Assets.xcassets */,
+				555AB04F208922E400DBF317 /* tessdata */,
+				55B836A8208D1DA8001C5232 /* GoogleService-Info.plist */,
+				5565EAF4208E56AB007739AE /* loader_black.json */,
+				5528AB0C208FBF0C0009DCE0 /* hello.json */,
+				5545C2E5208E919E00666218 /* awsconfiguration.json */,
+				55051978208165C000FD7130 /* Info.plist */,
+			);
+			path = "Third Eye";
+			sourceTree = "<group>";
+		};
+		554358DE208BC2F300016902 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				55DE1060208804FC00C6B6BC /* AzureModel.mlmodel */,
+				55DE105F208804FC00C6B6BC /* Turi_Create.mlmodel */,
+				557216F5208D3B5B00B80791 /* Alphanum_28x28.mlmodel */,
+				55C898182089474600D5BF0B /* Tensorflow.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		557216D2208D1F9A00B80791 /* OCR Methods */ = {
+			isa = PBXGroup;
+			children = (
+				557216D3208D1FB100B80791 /* Tesseract.swift */,
+				55205C01208E4C4900426D29 /* Azure.swift */,
+				557216F3208D3B0D00B80791 /* Vision.swift */,
+				5545C2E3208E904300666218 /* AWS.swift */,
+			);
+			path = "OCR Methods";
+			sourceTree = "<group>";
+		};
+		7F4DB1856F569398E74C5F49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE45157FA766629BADBAECC1 /* Pods-Third Eye.debug.xcconfig */,
+				C3576F4982A573A36EDAB8AB /* Pods-Third Eye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBFE4DDF61001AD674ED20A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5518A2A820ACD9EB00C708B4 /* AVFoundation.framework */,
+				B699940BC60823BB8F732108 /* Pods_Third_Eye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55051968208165C000FD7130 /* Third Eye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5505197B208165C000FD7130 /* Build configuration list for PBXNativeTarget "Third Eye" */;
+			buildPhases = (
+				2B4F6E9F53E563C633816448 /* [CP] Check Pods Manifest.lock */,
+				55051965208165C000FD7130 /* Sources */,
+				55051966208165C000FD7130 /* Frameworks */,
+				55051967208165C000FD7130 /* Resources */,
+				0942C29069F53270897F542B /* [CP] Embed Pods Frameworks */,
+				E3116FF76A8ED7D830067216 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Third Eye";
+			productName = "Third Eye";
+			productReference = 55051969208165C000FD7130 /* Third Eye.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55051961208165C000FD7130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joshua Colley";
+				TargetAttributes = {
+					55051968208165C000FD7130 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 55051964208165C000FD7130 /* Build configuration list for PBXProject "Third Eye" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55051960208165C000FD7130;
+			productRefGroup = 5505196A208165C000FD7130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55051968208165C000FD7130 /* Third Eye */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55051967208165C000FD7130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55051977208165C000FD7130 /* LaunchScreen.storyboard in Resources */,
+				5545C2E6208E919E00666218 /* awsconfiguration.json in Resources */,
+				555AB050208922E400DBF317 /* tessdata in Resources */,
+				55B836A9208D1DA9001C5232 /* GoogleService-Info.plist in Resources */,
+				55051974208165C000FD7130 /* Assets.xcassets in Resources */,
+				5565EAF5208E56AB007739AE /* loader_black.json in Resources */,
+				5528AB0D208FBF0C0009DCE0 /* hello.json in Resources */,
+				55051972208165C000FD7130 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0942C29069F53270897F542B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B4F6E9F53E563C633816448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Third Eye-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3116FF76A8ED7D830067216 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye-resources.sh",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLjoy_100.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLlefteyeclosed_200.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/BCLrighteyeclosed_200.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/LMprec_600.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/MFTprec_202.emd",
+				"${PODS_ROOT}/GoogleMobileVision/FaceDetector/Resources/PFFprec_702.emd",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLjoy_100.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLlefteyeclosed_200.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCLrighteyeclosed_200.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LMprec_600.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MFTprec_202.emd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PFFprec_702.emd",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Third Eye/Pods-Third Eye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55051965208165C000FD7130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5505196D208165C000FD7130 /* AppDelegate.swift in Sources */,
+				557216D4208D1FB100B80791 /* Tesseract.swift in Sources */,
+				550519872081753000FD7130 /* FrameHelper.swift in Sources */,
+				557216F4208D3B0D00B80791 /* Vision.swift in Sources */,
+				5528AAFF208FA4FC0009DCE0 /* ListenVC.swift in Sources */,
+				55DE1061208804FC00C6B6BC /* Turi_Create.mlmodel in Sources */,
+				55205C02208E4C4900426D29 /* Azure.swift in Sources */,
+				55C898192089474600D5BF0B /* Tensorflow.mlmodel in Sources */,
+				5545C2E4208E904300666218 /* AWS.swift in Sources */,
+				5505198320816CD600FD7130 /* LetterClassification.swift in Sources */,
+				557216F6208D3B5B00B80791 /* Alphanum_28x28.mlmodel in Sources */,
+				550519812081685B00FD7130 /* ReadVC.swift in Sources */,
+				5528AAFB208F94640009DCE0 /* InitialVC.swift in Sources */,
+				550515092091253200C7E50E /* DetectVC.swift in Sources */,
+				5505197F208166D700FD7130 /* CaptureVC.swift in Sources */,
+				5528AB01208FAF520009DCE0 /* UIViewController.swift in Sources */,
+				5518A2AB20ACDC4400C708B4 /* CompareVC.swift in Sources */,
+				55DE1062208804FC00C6B6BC /* AzureModel.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55051970208165C000FD7130 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55051971208165C000FD7130 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55051975208165C000FD7130 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55051976208165C000FD7130 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55051979208165C000FD7130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5505197A208165C000FD7130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5505197C208165C000FD7130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE45157FA766629BADBAECC1 /* Pods-Third Eye.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 342JHW2A2U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ Eye",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Third Eye/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshcolley.com.Third-Eye";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5505197D208165C000FD7130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3576F4982A573A36EDAB8AB /* Pods-Third Eye.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 342JHW2A2U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ Eye",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Third Eye/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshcolley.com.Third-Eye";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55051964208165C000FD7130 /* Build configuration list for PBXProject "Third Eye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55051979208165C000FD7130 /* Debug */,
+				5505197A208165C000FD7130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5505197B208165C000FD7130 /* Build configuration list for PBXNativeTarget "Third Eye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5505197C208165C000FD7130 /* Debug */,
+				5505197D208165C000FD7130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55051961208165C000FD7130 /* Project object */;
+}
